@@ -1,0 +1,6 @@
+{
+	// https://jshint.com/docs/options/#expr
+  "expr": true,
+  "esversion": 6,
+  "node": true
+}
