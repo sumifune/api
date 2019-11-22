@@ -1,0 +1,6 @@
+/C/Users/Nombre/docker/projects/sushipop/api
+
+PWD in Windows hosts
+docker run --rm -v ${PWD}:/data alpine ls /data
+
+NOTE: PWD all capitalized

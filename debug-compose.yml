@@ -1,0 +1,18 @@
+version: '3.6'
+
+services:
+  app:
+    build: .
+    volumes:
+      # Local app folder is mounted to the container
+      - .:/usr/src/app
+      # node_modules that are installed inside the container during
+      # the build will not be overridden by your current folder.
+      - /usr/src/app/node_modules
+    ports:
+      - "8080:8080"
+      - "9229:9229"
+    command:
+      - npm
+      - run
+      - debug
